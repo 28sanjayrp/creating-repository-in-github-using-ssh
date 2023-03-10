@@ -1,0 +1,17 @@
+create_a_repository_in_github_using_ssh-
+
+    1  yum install git
+    2  git --version
+    3  clear
+    4  ssh-keygen -t rsa -b 4096 -C sanjayrp8123@gmail.com
+    5  cat<~/.ssh/id_rsa.pub
+    6  mkdir creating-repository-in-github-using-ssh
+    7  cd creating-repository-in-github-using-ssh
+    8  echo "# creating-repository-in-github-using-ssh" >> README.md
+    9  git init
+   10  git add README.md
+   11  git commit -m "first commit"
+   12  git branch -M main
+   13  git remote add origin git@github.com:28sanjayrp/creating-repository-in-github-using-ssh.git
+   14  git push -u origin main
+   15  git status
